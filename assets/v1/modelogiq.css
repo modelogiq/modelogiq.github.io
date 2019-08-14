@@ -1,0 +1,273 @@
+
+
+/* fonts
+
+  MuseoSans, Helvetica, Tahoma, Arial, sans-serif;
+
+*/
+
+/* base */
+
+html,
+body {
+    height: 100%;
+    background: white;
+    font-family: MuseoSans-100;
+}
+
+a:link {text-decoration:none;}
+a:visited {text-decoration:none;}
+a:hover {text-decoration:none;}
+a:active {text-decoration:none;}
+
+/* structure */
+
+#wrap {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  /* Negative indent footer by its height */
+  margin: 0 auto -3em;
+  /* Pad bottom by footer height */
+  padding: 0 0 3em;
+  background: #E5E5E5;
+}
+
+#header {
+    padding-bottom: 1em;
+}
+
+#footer {
+    height: 3em;
+    background-color: #646464;
+    font-size: 1em;
+}
+
+#footer .row {
+    background-color: #646464;
+}
+
+#footer a {
+    color: white;
+}
+
+@media (min-width: 1200px) {
+    #footer div.col:first-child {
+        text-align: left;
+    }
+    #footer div.col:last-child {
+        text-align: right;
+    }
+}
+
+/* layout */
+
+div.row {
+    background: #FFFFFF;
+    padding-bottom: 0.6em;
+}
+
+div.row-content {
+    margin-top: 0.6em;
+    margin-bottom: 0px;
+}
+
+div.row-visual-highlight {
+    background: #F0F0F0;
+}
+
+/* typography */
+
+ul {
+    list-style-type: none;
+    list-style-position: inside;
+    padding: 0px;
+    margin-left: 1em;
+}
+
+ul li {
+    text-indent: -0.358em;
+}
+
+h1 {
+    margin-bottom: 0em;
+}
+h1, h1 a, h1 a:hover, h1 a:visited, h1 a:active {
+    color: #1b325f;
+    font-family: MuseoSans-700;
+    font-size: 2em;
+}
+
+#logo {
+    margin-left: 0px;
+}
+
+h2 {
+    color: #f26c4f;
+	text-align: center;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+	font: 2.5em MuseoSans-300;
+}
+
+h3 {
+    color: #1b325f;
+    font-size: 1.4em;
+    font-family: MuseoSans-300;
+    margin-top: 0;
+    margin-bottom: 0.15em;
+}
+
+p, li {
+    font-size: 1.2em;
+}
+
+span.motto {
+    color: #3a89c9;
+    font-size: 1.4em;
+    padding-left: 0.2em;
+}
+
+.symbol {
+    width: 2em;
+    height: 2em;
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+}
+
+.symbol.glyphicons:before {
+    color: #9cc4e4;
+}
+
+#content-description-details {
+    padding-top: 0.6em;
+}
+
+#content-description-details .symbol.glyphicons:before {
+    color: #1b325f;
+}
+
+/* overview */
+
+#overview {
+    /* ensure visual has 100% height using larger negative margin and
+       compensatory padding trick */
+    min-height: 100%;
+    overflow: hidden;
+    margin-top: 0;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    background: rgb(24,32,51); /* Old browsers */
+    /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMTAwJSIgeDI9IjEwMCUiIHkyPSIwJSI+CiAgICA8c3RvcCBvZmZzZXQ9IjIwJSIgc3RvcC1jb2xvcj0iIzE4MjAzMyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjU5JSIgc3RvcC1jb2xvcj0iIzI2MmY1MCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
+    background: -moz-linear-gradient(45deg,  rgb(24,32,51) 20%, rgb(38,47,80) 59%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left bottom, right top, color-stop(20%,rgb(24,32,51)), color-stop(59%,rgb(38,47,80))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(45deg,  rgb(24,32,51) 20%,rgb(38,47,80) 59%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(45deg,  rgb(24,32,51) 20%,rgb(38,47,80) 59%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(45deg,  rgb(24,32,51) 20%,rgb(38,47,80) 59%); /* IE10+ */
+    background: linear-gradient(45deg,  rgb(24,32,51) 20%,rgb(38,47,80) 59%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#182033', endColorstr='#262f50',GradientType=1 ); /* IE6-8 fallback on horizontal gradient */
+
+}
+
+#overview-visual {
+    /* trick to ensure visual div has 100% height */
+    margin-bottom: -1000px; padding-bottom: 1000px;
+    background: url(overview.png) no-repeat top left;
+    background-size:500px auto;
+}
+
+#greeting-primary {
+    color: white;
+    font-family: MuseoSans-500;
+    font-size: 2.2em;
+}
+
+#greeting-secondary {
+    color: white;
+    font-family: MuseoSans-300;
+    font-size: 1.8em;
+}
+
+#greeting-tertiary {
+    color: white;
+    font-family: MuseoSans-100;
+    font-size: 1.4em;
+}
+
+#greeting-action {
+	margin-top: 1em;
+    padding-right: 1em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    text-align: center;
+	/*background-color: #9cc4e4;*/
+    background-color: #3a89c9;
+	font: 1.3em MuseoSans-500;
+}
+
+#greeting-action-link {
+    color: #e9f2f9;
+}
+
+/*@media (max-width: 768px) {*/
+    /*#overview {*/
+        /*text-align: center;*/
+    /*}*/
+/*}*/
+
+/*#content-description-overview-heading h2 {*/
+    /*margin-top: 2em;*/
+/*}*/
+
+/* showcase */
+
+#showcase-container {
+    padding-bottom: 0px;
+}
+
+#showcase {
+    padding: 0;
+    margin-top: 1em;
+    margin-bottom: 0;
+}
+
+#showcase-screen {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+}
+
+#showcase-gloss {
+    z-index: 2;
+    float: right;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    height: auto;
+}
+
+#showcase-base {
+    padding: 0;
+    margin-top: 0;
+}
+
+#showcase-base-visual {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 3em;
+}
+
+#content-description-platform {
+    padding-bottom: 2em;
+}
+
+#content-description-platform-details {
+    padding-top: 2em;
+    padding-bottom: 2em;
+}

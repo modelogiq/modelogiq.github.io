@@ -1,0 +1,29 @@
+A
+
+@screen-xs 480px
+@screen-sm 768px
+@screen-md 992px
+@screen-lg 1200px
+
+@container-tablet 728px
+@container-desktop 940px
+@container-lg-desktop 1170px
+
+@grid-gutter-width 30px
+@grid-float-breakpoint @screen-sm
+
+
+B
+
+@screen-xs 324px
+@screen-sm 626px
+@screen-md 780px
+@screen-lg 1200px
+
+@container-tablet 626px
+@container-desktop 780px
+@container-lg-desktop 1200px
+
+@grid-gutter-width 20px
+@grid-float-breakpoint @screen-sm
+
